@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+* {
+  scrollbar-color: #eb4026 #ffffff;
+}
+
+::selection {
+  background-color: #eb4026;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eb4026;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d73720;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Anton", cursive;
+}
+
+h3 {
+  font-family: "Smooch", cursive;
+}
+
+header nav a {
+  font-family: "Anton", sans-serif;
+  line-height: 30px;
+  padding: 12px 5px 20px;
+  letter-spacing: 1px;
+  border-top: 8px solid transparent;
+  transition: border-color 400ms ease, color 400ms ease;
+}
+header nav a:hover {
+  border-top-color: #eb4026;
+  color: #eb4026;
+}
+
+.home {
+  background: url(../../public/imgs/Home.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 95vh;
+  position: relative;
+}
+
+.home .container h2 {
+  line-height: 72px;
+}
+
+.home .container p {
+  line-height: 24px;
+}
+
+.home .container a {
+  font-family: "Anton", cursive;
+  line-height: 14px;
+}
+
+.over {
+  background: url(../../public/imgs/OverDown.png) no-repeat center center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: -63px;
+  left: 0;
+  z-index: 3;
+}
+
+.contact {
+  padding-top: 200px;
+  padding-bottom: 116px;
+  background-color: #1c1c1c;
+  background-image: url(https://assets.website-files.com/6278c34ab9ccf820dbbb557f/6278ef31bfb6d4cfaac2126e_texture_up.png);
+  background-position: 50% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
