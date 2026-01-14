@@ -37,7 +37,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
+h2,
+.ant {
   font-family: "Anton", cursive;
 }
 

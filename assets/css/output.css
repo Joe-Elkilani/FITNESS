@@ -7,12 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    --radius-md: 0.375rem;
     --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,9 +184,6 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-3 {
-    right: calc(var(--spacing) * 3);
-  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -192,9 +192,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-3 {
-    left: calc(var(--spacing) * 3);
   }
   .z-10 {
     z-index: 10;
@@ -235,8 +232,17 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -247,11 +253,14 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-6\.5 {
+    margin-bottom: calc(var(--spacing) * 6.5);
+  }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
-  }
-  .mb-\[10px\] {
-    margin-bottom: 10px;
   }
   .flex {
     display: flex;
@@ -268,6 +277,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-\[83\%\] {
     width: 83%;
   }
@@ -282,6 +294,9 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -313,6 +328,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -321,8 +339,17 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\#eb4026\] {
+    background-color: #eb4026;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-\[url\(\'\/public\/imgs\/service2\.jpg\'\)\] {
     background-image: url('/public/imgs/service2.jpg');
@@ -357,14 +384,23 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
+  .px-3\.75 {
+    padding-inline: calc(var(--spacing) * 3.75);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.25 {
+    padding-block: calc(var(--spacing) * 2.25);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -384,8 +420,14 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[17px\] {
+    font-size: 17px;
   }
   .text-\[20px\] {
     font-size: 20px;
@@ -410,6 +452,14 @@
   }
   .text-\[80px\] {
     font-size: 80px;
+  }
+  .leading-4 {
+    --tw-leading: calc(var(--spacing) * 4);
+    line-height: calc(var(--spacing) * 4);
+  }
+  .leading-4\.5 {
+    --tw-leading: calc(var(--spacing) * 4.5);
+    line-height: calc(var(--spacing) * 4.5);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -455,17 +505,13 @@
     --tw-leading: calc(var(--spacing) * 17.25);
     line-height: calc(var(--spacing) * 17.25);
   }
+  .leading-\[1\.4\] {
+    --tw-leading: 1.4;
+    line-height: 1.4;
+  }
   .leading-\[23px\] {
     --tw-leading: 23px;
     line-height: 23px;
-  }
-  .leading-\[30px\] {
-    --tw-leading: 30px;
-    line-height: 30px;
-  }
-  .leading-\[44px\] {
-    --tw-leading: 44px;
-    line-height: 44px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -483,6 +529,9 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
   }
+  .text-\[\#6d6d6d\] {
+    color: #6d6d6d;
+  }
   .text-\[\#eb4026\] {
     color: #eb4026;
   }
@@ -499,6 +548,10 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-0 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 0px;
+  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -508,6 +561,10 @@
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
   }
   .duration-500 {
     --tw-duration: 500ms;
@@ -520,11 +577,36 @@
       }
     }
   }
+  .hover\:bg-\[\#cf3a22\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #cf3a22;
+      }
+    }
+  }
   .hover\:bg-\[\#eb4026\] {
     &:hover {
       @media (hover: hover) {
         background-color: #eb4026;
       }
+    }
+  }
+  .hover\:bg-black {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black);
+      }
+    }
+  }
+  .focus\:border-black {
+    &:focus {
+      border-color: var(--color-black);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
     }
   }
   .sm\:grid-cols-2 {
@@ -567,7 +649,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-h2 {
+h2, .ant {
   font-family: "Anton", cursive;
 }
 h3 {
