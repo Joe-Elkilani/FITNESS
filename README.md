@@ -38,6 +38,17 @@ A modern, responsive **Fitness Landing Page** built with **HTML, Tailwind CSS, a
 
 ---
 
+👨‍💻 Author
+
+Yousef Elkilani
+Front-End Developer
+
+GitHub: [https://github.com/USERNAME](https://github.com/Joe-Elkilani)
+
+LinkedIn: www.linkedin.com/in/yousef-elkilani-234467369
+
+---
+
 ## 📂 Project Structure
 ```text
 ├── assets
