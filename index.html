@@ -292,14 +292,14 @@
               >
                 SIGN UP & START HERE
               </h2>
-              <form action="" class="text-white mt-15">
+              <form action="" class="text-white mt-15 w-[80%]">
                 <h6 class="mb-1.5 font-light text-[20px] leading-4.5">
                   CHOOSE A PLAN
                 </h6>
                 <select
                   name="plan"
                   id="selectPlan"
-                  class="w-[80%] bg-white mb-6 text-[15px] leading-[1.4] text-[#6d6d6d] font-normal py-3 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-black cursor-pointer"
+                  class="w-full bg-white mb-6 text-[15px] leading-[1.4] text-[#6d6d6d] font-normal py-3 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-black cursor-pointer"
                 >
                   <option value="" disabled selected hidden>
                     Select a plan
@@ -311,23 +311,51 @@
                 <input
                   type="email"
                   placeholder="Your Email Address"
-                  class="w-[80%] bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
+                  class="w-full bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
                 />
                 <input
                   type="text"
                   placeholder="Write UserName"
-                  class="w-[80%] bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
+                  class="w-full bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
                 />
                 <input
                   type="password"
                   placeholder="Write Password"
-                  class="w-[80%] bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
+                  class="w-full bg-white mb-6.5 text-[16px] outline-0 leading-5.75 text-[#6d6d6d] py-3 px-3 rounded-md font-normal"
                 />
                 <button
-                  class="w-[80%] bg-[#eb4026] py-3 px-3.75 ant font-normal text-[17px] uppercase leading-5.75 text-white rounded-md hover:bg-black transition-all duration-500"
+                  class="w-full bg-[#eb4026] py-3 px-3.75 ant font-normal text-[17px] uppercase leading-5.75 text-white rounded-md hover:bg-black transition-all duration-500"
                 >
                   Create Your Account
                 </button>
+                <p
+                  class="mt-6.25 font-normal text-[12px] leading-5.75 text-[#a9a9a9] text-center"
+                >
+                  Already have an account?
+                  <a href="#" class="ml-1.25 font-bold text-[#eb4026]">Login</a>
+                </p>
+                <p
+                  class="font-light text-[12px] pt-2 leading-4.5 text-[#a9a9a9] text-center"
+                >
+                  All memberships automatically recur at $45.95 per month.
+                  <a
+                    href=""
+                    class="hover:text-[#eb4026] duration-500 transition-all"
+                    >Cancel</a
+                  >
+                  at any time. By clicking the button above you agree to our
+                  <a
+                    href=""
+                    class="hover:text-[#eb4026] duration-500 transition-all"
+                    >Terms of Use</a
+                  >
+                  and
+                  <a
+                    href=""
+                    class="hover:text-[#eb4026] duration-500 transition-all"
+                    >Privacy Policy</a
+                  >.
+                </p>
               </form>
             </div>
             <div class="relative">
@@ -350,6 +378,53 @@
         </div>
       </section>
     </main>
+    <footer class="pb-6 bg-[#1c1c1c]">
+      <div
+        class="container flex justify-between items-center mx-auto w-[83%] border-t pt-4.5 border-white"
+      >
+        <div>
+          <ul class="flex items-center gap-3 text-[12px] text-[#a9a9a9]">
+            <li class="flex items-center">
+              <a
+                href="#"
+                class="hover:text-[#eb4026] transition-colors duration-500"
+              >
+                Terms and Conditions
+              </a>
+            </li>
+
+            <li class="mx-3 text-[#a9a9a9]">|</li>
+
+            <li class="flex items-center">
+              <a
+                href="#"
+                class="hover:text-[#eb4026] transition-colors duration-500"
+              >
+                Privacy Policy
+              </a>
+            </li>
+
+            <li class="mx-3 text-[#a9a9a9]">|</li>
+
+            <li class="flex items-center">
+              <a
+                href="#"
+                class="hover:text-[#eb4026] transition-colors duration-500"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-[#a9a9a9] text-[12px] leading-3">
+          Copyright © 2026. Yousef Elklani. All Rights Reserved.
+        </div>
+        <div class="text-[#a9a9a9] text-[12px] leading-3">
+          Santa Claus, 123 Elf Road, North Pole
+        </div>
+      </div>
+    </footer>
     <!-- JS -->
     <script src="assets/js/main.js"></script>
   </body>
