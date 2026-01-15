@@ -27,6 +27,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/output.css" />
     <title>FITNESS</title>
@@ -34,17 +36,17 @@
   <body>
     <header class="absolute top-0 left-0 right-0 z-50 w-full px-3 py-6">
       <div class="container mx-auto w-[85%] flex justify-between items-center">
-        <div class="logo">
+        <div class="logo" data-aos="fade-down-right">
           <img src="public/imgs/logo2.svg" loading="lazy" alt="Fitness Logo" />
         </div>
         <nav>
           <ul class="flex gap-8 items-center">
-            <li>
+            <li data-aos="fade-up">
               <a href="#" class="uppercase text-white text-[20px] font-black"
                 >Login</a
               >
             </li>
-            <li>
+            <li data-aos="fade-up">
               <a href="#" class="uppercase text-white text-[20px] font-black"
                 >SubScribe Now</a
               >
@@ -60,16 +62,22 @@
       >
         <div class="container mx-auto w-[85%] flex items-center">
           <div class="flex flex-col gap-3 text-white z-10">
-            <h3 class="text-[80px] font-normal text-[#eb4026]">Insanely</h3>
-            <h2 class="mb-5 font-normal text-[68px]">
+            <h3
+              class="text-[80px] font-normal text-[#eb4026]"
+              data-aos="fade-down"
+            >
+              Insanely
+            </h3>
+            <h2 class="mb-5 font-normal text-[68px]" data-aos="fade-right">
               ACHIEVABLE<br />HOME WORKOUTS
             </h2>
-            <p class="font-light">
+            <p class="font-light" data-aos="fade-left">
               Work out from anywhere; your trainer is always with you!
             </p>
 
             <a
               href="#"
+              data-aos="fade-up"
               class="mt-10 px-10 py-4 text-white text-[14px] border-2 border-white rounded-4xl hover:bg-[#eb4026] hover:border-[#eb4026] transition-all duration-500 w-fit uppercase"
               >Learn More
             </a>
@@ -82,15 +90,21 @@
       <section>
         <div class="container mx-auto w-[83%]">
           <div class="mb-15">
-            <h3 class="text-[#eb4026] text-[48px] font-normal leading-12">
+            <h3
+              class="text-[#eb4026] text-[48px] font-normal leading-12"
+              data-aos="flip-up"
+            >
               Benefits of Insanely Powerful
             </h3>
-            <h2 class="mt-2.5 text-[62px] leading-17.25 font-normal uppercase">
+            <h2
+              class="mt-2.5 text-[62px] leading-17.25 font-normal uppercase"
+              data-aos="flip-down"
+            >
               HOME WORKOUTS
             </h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            <div>
+            <div data-aos="fade-down-right">
               <div>
                 <img
                   src="public/imgs/service1.jpg"
@@ -99,25 +113,33 @@
                 />
               </div>
               <div class="p-8.75">
-                <h2 class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]">
+                <h2
+                  class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
+                >
                   EASY TO FOLLOW
                 </h2>
-                <p class="mb-2.5 font-light text-[16px] loading-[23px]">
+                <p
+                  class="mb-2.5 font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
+                >
                   Workouts are presented in an easy-to-follow<br />
                   manner. So, do it right without losing the<br />
                   momentum.
                 </p>
               </div>
             </div>
-            <div class="relative service2 service">
+            <div class="relative service2 service" data-aos="fade-down">
               <div class="p-8.75 absolute bottom-0 left-0 right-0">
                 <h2
                   class="mt-5 text-white font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
                 >
                   SET YOUR OWN PACE
                 </h2>
                 <p
                   class="mb-2.5 text-white font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
                 >
                   Work out at a pace that best suits you.<br />
                   Be the boss and take control of your<br />
@@ -125,7 +147,7 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-down-left">
               <div>
                 <img
                   src="public/imgs/service3.jpg"
@@ -134,25 +156,33 @@
                 />
               </div>
               <div class="p-8.75">
-                <h2 class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]">
+                <h2
+                  class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
+                >
                   ALL LEVELS OF DIFFICULTY
                 </h2>
-                <p class="mb-2.5 font-light text-[16px] loading-[23px]">
+                <p
+                  class="mb-2.5 font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
+                >
                   Find workouts for all levels. If you want<br />something easy,
                   this is the place. Need<br />something more challenging? We
                   have it too.
                 </p>
               </div>
             </div>
-            <div class="relative service4 service">
+            <div class="relative service4 service" data-aos="fade-up-right">
               <div class="p-8.75 absolute bottom-0 left-0 right-0">
                 <h2
                   class="mt-5 text-white font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
                 >
                   CHOOSE YOUR GOALS
                 </h2>
                 <p
                   class="mb-2.5 text-white font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
                 >
                   Your goals could be anything: Strength<br />Training, Fat
                   Loss, Flexibility Training, and<br />more! We have workouts
@@ -160,7 +190,7 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-up">
               <div>
                 <img
                   src="public/imgs/service5.jpg"
@@ -169,25 +199,33 @@
                 />
               </div>
               <div class="p-8.75">
-                <h2 class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]">
+                <h2
+                  class="mt-5 font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
+                >
                   TAKE WORKOUT WITH YOU
                 </h2>
-                <p class="mb-2.5 font-light text-[16px] loading-[23px]">
+                <p
+                  class="mb-2.5 font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
+                >
                   Your workout travels with you wherever you go.<br />Just take
                   it with you! Workouts are available at<br />your fingertip. Do
                   it now!
                 </p>
               </div>
             </div>
-            <div class="relative service6 service">
+            <div class="relative service6 service" data-aos="fade-up-left">
               <div class="p-8.75 absolute bottom-0 left-0 right-0">
                 <h2
                   class="mt-5 text-white font-normal text-[30px] mb-2.5 loading-[30px]"
+                  data-aos="zoom-in-down"
                 >
                   For all ages
                 </h2>
                 <p
                   class="mb-2.5 text-white font-light text-[16px] loading-[23px]"
+                  data-aos="zoom-in-up"
                 >
                   Find the right workout that suits your age<br />and fitness
                   level. We have workouts for<br />all ages!
@@ -198,7 +236,10 @@
         </div>
       </section>
       <section class="mt-40 pt-10 relative">
-        <p class="text-center px-8 text-[26px] font-bold leading-9">
+        <p
+          class="text-center px-8 text-[26px] font-bold leading-9"
+          data-aos="flip-right"
+        >
           Need a change of scene? You can work out from anywhere, anytime you<br />
           want. Bring freshness every day!
         </p>
@@ -209,17 +250,21 @@
         <div class="container mx-auto w-[83%]">
           <h3
             class="text-[48px] text-center leading-12 font-normal text-[#eb4026]"
+            data-aos="flip-left"
           >
             Insanely Irresistible Home Workouts
           </h3>
-          <h2 class="mb-5 text-center font-normal text-[62px] leading-17.25">
+          <h2
+            class="mb-5 text-center font-normal text-[62px] leading-17.25"
+            data-aos="flip-right"
+          >
             A WORKOUT PARTNER YOU CAN TRUST
           </h2>
           <div
             class="grid grid-cols-1 pt-10 sm:grid-cols-2 lg:grid-cols-3 gap-7"
           >
-            <div class="flex items-center gap-5">
-              <div class="">
+            <div class="flex items-center gap-5" data-aos="flip-up">
+              <div>
                 <img
                   src="https://assets.website-files.com/6278c34ab9ccf820dbbb557f/6278eaec896c26620841ff07_icon_workouts.svg"
                   loading="lazy"
@@ -237,8 +282,8 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-center gap-5">
-              <div class="">
+            <div class="flex items-center gap-5" data-aos="zoom-in">
+              <div>
                 <img
                   src="https://assets.website-files.com/6278c34ab9ccf820dbbb557f/6278ec1b1f772b3ebc034f48_icon_support.svg"
                   loading="lazy"
@@ -252,7 +297,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-5" data-aos="flip-down">
               <div class="">
                 <img
                   src="https://assets.website-files.com/6278c34ab9ccf820dbbb557f/6278ec55b780251ec028a9e1_icon_cancel.svg"
@@ -275,7 +320,7 @@
       <section class="contact">
         <div class="container mx-auto w-[83%]">
           <div class="grid grid-cols-1 pt-10 sm:grid-cols-2">
-            <div>
+            <div data-aos="flip-left">
               <h3 class="font-normal text-[80px] text-[#eb4026] leading-11">
                 Get Fit Now!
               </h3>
@@ -350,7 +395,7 @@
                 </p>
               </form>
             </div>
-            <div class="relative">
+            <div class="relative" data-aos="flip-right">
               <img src="public/imgs/contact.jpg" loading="lazy" alt="" />
               <div class="absolute px-10 bottom-20 left-0 right-0">
                 <h2
@@ -417,6 +462,8 @@
         </div>
       </div>
     </footer>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JS -->
     <script src="assets/js/main.js"></script>
   </body>
