@@ -90,6 +90,28 @@ header nav a:hover {
   z-index: 3;
 }
 
+/* service2 service */
+.service {
+  background-size: cover;
+  background-position: center;
+}
+
+.service2 {
+  background-image: url(../../public/imgs/service2.jpg);
+}
+
+.service4 {
+  background-image: url(../../public/imgs/service4.jpg);
+}
+
+.service6 {
+  background-image: url(../../public/imgs/service6.jpg);
+}
+
+.whatyouneed {
+  background-image: url(../../public/imgs/whatyouneed5.png);
+}
+
 .contact {
   padding-top: 200px;
   padding-bottom: 116px;
